@@ -4,14 +4,15 @@
     box-sizing: border-box;
 }
 
-header{
+header {
     position: sticky;
-        top: 0;
-        z-index: 1000;
-        /* Ensures the header stays on top of other elements */
-        background-color: #ececec;;
-        /* Ensure it's visible over the content */
-    
+    top: 0;
+    z-index: 1000;
+    /* Ensures the header stays on top of other elements */
+    background-color: #ececec;
+    ;
+    /* Ensure it's visible over the content */
+
 }
 
 .navbar {
@@ -19,7 +20,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ececec;;
+    background-color: #ececec;
+    ;
     padding: 10px 20px;
     font-style: inherit;
     position: relative;
@@ -46,7 +48,7 @@ header{
 
 .header-right {
     display: flex;
-   /* position: absolute; 
+    /* position: absolute; 
     bottom: 10px; right:20px; */
 }
 
@@ -135,6 +137,7 @@ header{
     transform: scale(1.1);
     /* Zoom in effect }*/
 }
+
 /* Keyframes for slide-in-out animation */
 @keyframes slideInOut {
 
@@ -148,7 +151,7 @@ header{
         transform: translateZ(0);
         opacity: 1;
     }
-} 
+}
 
 /* banner details */
 .box1 {
@@ -230,7 +233,7 @@ header{
     /* Size of each dot */
     height: 10px;
     /* Size of each dot */
-    background-color:#333;
+    background-color: #333;
     /* Color of the dots */
     border-radius: 50%;
     /* Makes it a circle */
@@ -238,7 +241,7 @@ header{
     /* Space between the dots */
     opacity: 0.5;
     /* Initial opacity */
-    animation:  1.2s infinite;
+    animation: 1.2s infinite;
     /* Animation applied */
 }
 
@@ -287,43 +290,45 @@ header{
         /* Full opacity */
     }
 }
-.dbs-banner{
+
+.dbs-banner {
     background-image: url("images/Screenshot\ 2024-10-12\ 233831.png");
     height: 108px;
     background-size: cover;
 }
 
-.diwali{
+.diwali {
     background-image: url("images/light.png");
     height: 177px;
     background-size: contain;
-        background-repeat: no-repeat;
-        /* Prevents tiling */
-        background-position: center;
-        /* Centers the image */
-    }
+    background-repeat: no-repeat;
+    /* Prevents tiling */
+    background-position: center;
+    /* Centers the image */
+}
 
-        .box2{
-            height: 400px;
-            background-color: #9fd3c7;;
-            position: relative;
-            overflow: hidden;
-        }
+.box2 {
+    height: 400px;
+    background-color: #9fd3c7;
+    ;
+    position: relative;
+    overflow: hidden;
+}
 
-        .slider2 {
-            display: flex;
-            width: 100%;
-            height: 100px;
-            animation: slideAnimation1 9s infinite;
-        }
-    
-        .slides {
-            min-width: 100%;
-            height: 391.827px;
-            background-size: cover;
-            background-position: center;
-        }
-    
+.slider2 {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    animation: slideAnimation1 9s infinite;
+}
+
+.slides {
+    min-width: 100%;
+    height: 391.827px;
+    background-size: cover;
+    background-position: center;
+}
+
 @keyframes slideAnimation1 {
     0% {
         transform: translateX(0);
@@ -364,15 +369,15 @@ header{
     /* Adjust height as needed */
 }
 
-.sales{
+.sales {
     background-image: url("images/Screenshot\ 2024-10-13\ 213935.png");
     height: 100px;
     width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        /* Prevents tiling */
-        background-position: center;
-        /* Centers the image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Prevents tiling */
+    background-position: center;
+    /* Centers the image */
 }
 
 /* Background color for first section */
@@ -523,14 +528,14 @@ header{
     z-index: 0;
 }
 
-.returns{
+.returns {
     background-image: url("images/Screenshot\ 2024-10-14\ 125517.png");
     height: 120px;
     background-size: cover;
 }
 
 footer {
-    background-color:#12283a;
+    background-color: #12283a;
     color: #FFFFFF;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
@@ -605,7 +610,7 @@ footer {
 
 .about-section p {
     font-size: 20px;
-    font-style: inherit ;
+    font-style: inherit;
 }
 
 .back-to-top {
@@ -621,4 +626,354 @@ footer {
 
 .back-to-top:hover {
     text-decoration: underline;
+}
+
+/* Mobile devices (min-width: 300px and max-width: 900px) */
+@media screen and (min-width: 300px) and (max-width: 900px) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        /* Ensures the header stays on top of other elements */
+        background-color: #ececec;
+        ;
+        /* Ensure it's visible over the content */
+
+    } 
+    .bug1,
+    .bug2
+    {
+        display: none;
+    }
+    .navbar {
+        height: 90px;
+        display: flex;
+        background-color: #ececec;
+        padding: 10px 20px;
+        font-style: inherit;
+        position: relative;
+    }
+
+    .logo {
+        background-image: url("images/swathik.png");
+        background-size: cover;
+        height: 50px;
+        width: 120px;
+        position: absolute;
+        bottom: 42px;
+        left: 5px;
+    }
+
+    .header-right {
+        display: flex;
+    }
+
+    .links {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .tags {
+        margin-top: 40px;
+        margin-left: 1px;
+    }
+
+    .banner {
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+
+    .banner:hover {
+        transform: scale(1.05);
+        /* Slight zoom for mobile */
+    }
+
+    /* Adjusting slider for mobile */
+    .box1,
+    .box2 {
+        height: auto;
+        /* Allow it to adjust dynamically based on content */
+    }
+
+    .slider,
+    .slider2 {
+        flex-direction: row;
+        /* Keep slides horizontal */
+        width: 100%;
+        /* Ensure full width on mobile */
+        height: auto;
+        /* Auto adjust height */
+    }
+
+    .dbs-banner {
+        width: auto;
+        height: 35px;
+    }
+
+    .slide,
+    .slides {
+        min-width: 100%;
+        /* One slide at a time on mobile */
+        height: 200px;
+        /* Smaller height for mobile */
+        background-size: contain;
+        background-position: center;
+    }
+
+    /* Responsive loader */
+    .loader,
+    .loader2 {
+        height: 40px;
+        /* Adjust the loader height for mobile */
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    /* Diwali section responsiveness */
+    .diwali {
+        height: 150px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Sales banner responsiveness */
+    .sales {
+        height: 90px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    /* Responsive collection sections */
+    .levl1,
+    .levl2,
+    .levl3 {
+        padding: 10px;
+    }
+
+    .collections,
+    .collections2,
+    .collections3 {
+        flex-direction: column;
+        /* Stack items vertically for mobile */
+        align-items: center;
+    }
+
+    .cat,
+    .cat1,
+    .cat2 {
+        margin-bottom: 15px;
+        /* Add spacing between items */
+    }
+
+    .cat img,
+    .cat1 img,
+    .cat2 img {
+        width: 100%;
+        /* Make images responsive */
+        height: auto;
+    }
+
+    /* Returns banner responsiveness */
+    .returns {
+        height: 100px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Keyframe animations for slide show */
+    @keyframes slideAnimation {
+
+        0%,
+        20% {
+            transform: translateX(0);
+        }
+
+        25%,
+        45% {
+            transform: translateX(-100%);
+        }
+
+        50%,
+        70% {
+            transform: translateX(-200%);
+        }
+
+        75%,
+        100% {
+            transform: translateX(-300%);
+        }
+    }
+
+    @keyframes slideAnimation1 {
+
+        0%,
+        33% {
+            transform: translateX(0);
+        }
+
+        38%,
+        66% {
+            transform: translateX(-100%);
+        }
+
+        71%,
+        100% {
+            transform: translateX(-200%);
+        }
+    }
+
+    /* Responsive bouncing dots animation */
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+            opacity: 0.5;
+        }
+
+        40% {
+            transform: translateY(-7px);
+            /* Smaller bounce on mobile */
+            opacity: 1;
+        }
+    }
+}
+
+/* Tablets (min-width: 601px and max-width: 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-logo {
+        height: 65px;
+        /* Reduce logo size */
+        width: 120px;
+        margin-bottom: 15px;
+        text-align: center;
+        position: static;
+    }
+
+    .logo {
+        height: 65px;
+        width: 120px;
+    }
+
+    .header-right {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .tags {
+        margin: 0 10px;
+    }
+
+    .nav-search {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .nav-search input {
+        width: 80%;
+    }
+}
+
+/* Large devices (desktops, laptops) */
+@media screen and (min-width: 1025px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    .nav-logo {
+        height: 65px;
+        /* Restore original size */
+        width: 120px;
+        margin-bottom: 0;
+    }
+
+    .logo {
+        height: 65px;
+        width: 120px;
+    }
+
+    .header-right {
+        flex-direction: row;
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-search {
+        margin-left: 20px;
+    }
+
+    .nav-search input {
+        width: auto;
+    }
+}
+
+/* media for footer */
+@media only screen and (max-width: 300px) {
+    .about-section h1 {
+        font-size: 24px;
+    }
+
+    .about-section p {
+        font-size: 14px;
+    }
+
+    .about-section h3 {
+        font-size: 18px;
+    }
+
+    .about-section {
+        padding: 15px 0;
+    }
+}
+
+/* Media Query for Mobile Devices (480px and below) */
+@media only screen and (max-width: 980px) {
+    .about-section h1 {
+        font-size: 20px;
+    }
+
+    .about-section p {
+        font-size: 12px;
+    }
+
+    .about-section h3 {
+        font-size: 16px;
+    }
+
+    .about-section {
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+
+    .about-section i {
+        margin-right: 3px;
+    }
+
+    .about-section a {
+        font-size: 14px;
+    }
 }
