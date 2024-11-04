@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    /* Prevents horizontal scroll */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/licensed-image.jpg');
+    /* Add your background image here */
+    background-size: cover;
+    /* Ensure the image covers the whole background */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+/* Header with Logo and Location */
+.header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    width: 90px;
+    /* Adjust the size as needed */
+    height: 80px;
+    margin-right: 1190px;
+    border-radius: 50%;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: black;
+    
+}
+
+.location i {
+    margin-right: 5px;
+    align-items: end;
+}
+
+.label {
+    color: #181823;
+}
+
+/* Heading Styles */
+.hed {
+    font-style: inherit;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Converter Box */
+.converter {
+    margin: 0%;
+    width: 90%;
+    max-width: 400px;
+    height: 450px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    transition: box-shadow 0.3s ease;
+    background-image: url('images/licensed-image.jpg');
+    /* Add your converter box background image here */
+    background-size: cover;
+    /* Ensure the image covers the whole background */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.converter:hover {
+    box-shadow: 0 0 20px black;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.input-group input:hover,
+.input-group select:hover {
+    box-shadow: 0 0 28px #16325B;
+}
+
+/* Button */
+.convert-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: aquamarine;
+    color: #201E43;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.convert-btn:hover {
+    background-color: #00CCDD;
+}
+
+@media (max-width: 1024px) {
+    .hed {
+        top: 25%;
+        font-size: 1.8rem;
+    }
+    .converter {
+        padding: 15px;
+    }
+
+    .convert-btn {
+        font-size: 1em;
+    }
+}
+
+.result {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #86B6F6;
+}
+
+@media (max-width: 920px) {
+    .header {
+        font-size: 1rem;
+    }
+
+    .hed {
+        top: 26%;
+        font-size: 1.6rem;
+    }
+
+    .converter {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .convert-btn {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header {
+        font-size: 0.9rem;
+    }
+
+    .hed {
+        bottom: 25%;
+        font-size: 1.4rem;
+    }
+
+    .converter {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .convert-btn {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertion</title>
+    <link rel="stylesheet" href="im">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/sg-logo-design_731343-287.avif" alt="Logo" class="logo"> <!-- Add your logo image here -->
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i> Visakhapatnam
+        </div>
+    </div>
+    <h2 class="hed">Temperature Converter</h2>
+    <div class="converter">
+        <div class="input-group">
+            <label>Temperature:</label>
+            <input class="temp" type="number" id="temperature" placeholder="Enter temperature" required>
+        </div>
+        <div class="input-group">
+            <label>From:</label>
+            <select id="fromUnit">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label>To:</label>
+            <select id="toUnit">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+        </div>
+        <button class="convert-btn" onclick="convertTemperature()">Convert</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
