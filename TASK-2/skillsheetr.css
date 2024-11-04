@@ -1,0 +1,92 @@
+/* Basic styles for body and header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #081b21;
+}
+
+/* Navigation bar styling */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #081b21;
+    color: #fff;
+}
+
+.name {
+    font-size: 24px;
+}
+
+.list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.list li {
+    margin: 0 15px;
+}
+
+.list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.list a:hover {
+    text-decoration: underline;
+}
+
+/* Skills section styling */
+.skills-section {
+    padding: 50px 20px;
+    background-color: #081b21;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* Space between the image and skills list */
+}
+
+/* Styling the image container */
+.image-container img {
+    width: 570px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills list styling */
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.skills-list h2 {
+    font-size: 36px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+/* Styling each skill */
+.skill {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #081b21;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.skill:hover {
+    background-color: #081b21;
+}

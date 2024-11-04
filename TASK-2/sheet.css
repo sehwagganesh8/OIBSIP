@@ -1,0 +1,145 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #081b21;
+    color: white;
+}
+
+header {
+    padding: 30px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.name {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.list ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.list ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.list ul li a:hover {
+    color: #608BC1;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 120px);
+    padding: 0 100px;
+}
+
+.home-content {
+    max-width: 500px;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.home-content h3 {
+    font-size: 1.5rem;
+    color: #47b2ff;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #c8d8e4;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.primary {
+    background-color: #47b2ff;
+    color: #081b21;
+    border: none;
+}
+
+.secondary {
+    background-color: transparent;
+    color: #47b2ff;
+    border: 2px solid #47b2ff;
+}
+
+.primary:hover,
+.secondary:hover {
+    background-color: #47b2ff;
+    color: #081b21;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #47b2ff;
+    border-radius: 50%;
+    color: #47b2ff;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.icon:hover {
+    background-color: #47b2ff;
+    color: #081b21;
+}
+
+/* Image styling */
+.home-image img {
+    width: 600px;
+    height: auto;
+    border-radius: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
